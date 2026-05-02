@@ -57,7 +57,7 @@ let compute_shaders = [
 
 proc compilerSwitch(): string =
   when defined(windows):
-    return "--cc:vcc"
+    return "--cc:gcc"
   else:
     return ""
 
